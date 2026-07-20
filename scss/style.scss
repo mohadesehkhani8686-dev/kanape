@@ -151,6 +151,9 @@
         img{
             @include base-w-h(100%,auto);
         }
+        convas{
+            @include base-w-h();
+        }
     }
 }
 

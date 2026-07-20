@@ -48,7 +48,7 @@ cardWrapper.onmouseup = mouseUpAndLeave
 cardWrapper.onmouseleave = mouseUpAndLeave
 
 function mouseUpAndLeave(){
-    cardWrapper.remove.add('grab')
+    cardWrapper.classList.remove('grab')
     clicked = false
 }
 
@@ -61,3 +61,7 @@ function mouseUpAndLeave(){
       audio.play();
     });
   });
+
+  console.log(header);
+console.log(header.offsetWidth);
+console.log(header.offsetHeight);
