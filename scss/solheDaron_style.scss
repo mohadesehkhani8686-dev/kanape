@@ -1,0 +1,23 @@
+//partials
+@import 'basic';
+@import 'variables';
+@import 'mixin&function';
+
+
+.container-play-list__image-box{
+    @include base-w-h(50%,35vw);
+    overflow: hidden;
+    @include base-flex();
+    img{
+        @include base-w-h(80%,auto);
+        border-radius: 25px;
+    }
+}
+
+@media (max-width:800px){
+    .container-top__front__title{
+        font-size: 2rem;
+        text-align: center;
+        top:35%;
+    }
+}

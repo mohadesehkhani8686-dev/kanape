@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  direction: rtl;
+  font-family: "Vazirmatn", Shabnam, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  background-color: #141414; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+h3 {
+  font-weight: normal; }
+
+.container-main {
+  width: 100%;
+  height: 70vh;
+  padding: 3.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5vw; }
+  .container-main__newsletter-box {
+    width: 30%;
+    height: 100%;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden; }
+    .container-main__newsletter-box__back {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      overflow: hidden; }
+      .container-main__newsletter-box__back img {
+        width: auto;
+        height: 100%; }
+    .container-main__newsletter-box__front {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background-color: rgba(224, 105, 62, 0.75);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      gap: 2vh;
+      padding: 2vw;
+      font-size: 1rem;
+      color: white;
+      text-align: justify; }
+      .container-main__newsletter-box__front__title {
+        font-size: 1.25rem;
+        font-weight: bold; }
+      .container-main__newsletter-box__front .newsletter--form {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2vh; }
+        .container-main__newsletter-box__front .newsletter--form .npt--news {
+          width: 100%;
+          height: 40px;
+          border-radius: 20px;
+          border: none;
+          font-family: "Vazirmatn", Shabnam, sans-serif;
+          padding: 10px;
+          font-size: .8rem;
+          color: #4d4d4d; }
+        .container-main__newsletter-box__front .newsletter--form input[type=submit] {
+          color: white;
+          background-color: #141414; }
+  .container-main__dv-form {
+    width: 60%;
+    height: 100%; }
+    .container-main__dv-form form {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: top;
+      align-items: start;
+      gap: 2.5vh; }
+      .container-main__dv-form form .top--dv {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5vh; }
+      .container-main__dv-form form .frm--item {
+        border-radius: 20px;
+        border: none;
+        background-color: #e0693e;
+        font-family: "Vazirmatn", Shabnam, sans-serif;
+        padding: 15px;
+        font-size: .85rem;
+        color: #141414;
+        width: 49%;
+        height: 50px; }
+      .container-main__dv-form form #contact--us--name {
+        width: 100%; }
+      .container-main__dv-form form #contact--us--message {
+        width: 100%;
+        height: 100px; }
+      .container-main__dv-form form .submit--btn {
+        width: 25%;
+        color: white;
+        background-color: #f55b23; }
+
+.container-contact-us {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5vw;
+  padding: 3.5vw; }
+  .container-contact-us__item {
+    width: 33%;
+    height: 100px;
+    background-color: #141414;
+    box-shadow: 2px 2px 10px #4d4d4d;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: 1.5vw;
+    color: white;
+    padding: 20px;
+    transition: .4s; }
+    .container-contact-us__item__icon {
+      width: 50px;
+      height: 50px; }
+      .container-contact-us__item__icon img {
+        width: 100%;
+        height: 100%; }
+    .container-contact-us__item:nth-child(2) {
+      background-color: #e0693e; }
+    .container-contact-us__item:nth-child(3) {
+      background-color: #f55b23; }
+    .container-contact-us__item:hover {
+      transform: translateY(-10%); }
+
+.container-map {
+  padding: 3.5vw; }
+  .container-map iframe {
+    width: 100%;
+    height: 50vh;
+    border-radius: 20px; }

@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  direction: rtl;
+  font-family: "Vazirmatn", Shabnam, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  background-color: #141414; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+h3 {
+  font-weight: normal; }
+
+.container-play-list__image-box {
+  width: 50%;
+  height: 35vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .container-play-list__image-box img {
+    width: 80%;
+    height: auto;
+    border-radius: 25px; }
+
+@media (max-width: 800px) {
+  .container-top__front__title {
+    font-size: 2rem;
+    text-align: center;
+    top: 35%; } }

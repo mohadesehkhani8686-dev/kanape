@@ -1,0 +1,137 @@
+//partials
+@import 'basic';
+@import 'variables';
+@import 'mixin&function'; 
+
+
+// === container-main ===
+.container-main{
+    @include base-w-h(100%,70vh);
+    padding: 3.5vw;
+    @include base-flex();
+    gap: 3.5vw;
+    &__newsletter-box{
+        @include base-w-h(30%,100%);
+        border-radius: $base-border-radius;
+        position: relative;
+        overflow: hidden;
+        &__back{
+            @include base-w-h();
+            @include base-pos-ab();
+            overflow: hidden;
+            img{
+                @include base-w-h(auto,100%);
+            }
+        }
+        &__front{
+            @include base-w-h();
+            @include base-pos-ab();
+            background-color: rgba($color: $light-color, $alpha: 0.75);
+            @include base-flex(column,center,start);
+            gap: 2vh;
+            padding: 2vw;
+            font-size: 1rem;
+            color: $txt-color;
+            text-align: justify;
+            &__title{
+                font-size: 1.25rem;
+                font-weight: bold;
+            }
+            .newsletter--form{
+                @include base-w-h(100%,auto);
+                @include base-flex(column,center,center);
+                gap: 2vh;
+                .npt--news{
+                    @include base-w-h(100%,40px);
+                    border-radius: $base-border-radius;
+                    border: none;
+                    font-family: "Vazirmatn", Shabnam, sans-serif;
+                    padding: 10px;
+                    font-size: .8rem;
+                    color: #4d4d4d;
+                }
+                input[type = submit]{
+                    color: $txt-color;
+                    background-color: $primary-color;
+                }
+            }
+        }
+    }
+    &__dv-form{
+        @include base-w-h(60%,100%);
+        form{
+            @include base-w-h();
+            @include base-flex(column,top,start);
+            gap: 2.5vh;
+            .top--dv{
+                @include base-w-h(100%,auto);
+                @include base-flex();
+                gap: 2.5vh;
+            }
+            .frm--item{
+                border-radius: $base-border-radius;
+                border: none;
+                background-color: $light-color;
+                font-family: "Vazirmatn", Shabnam, sans-serif;
+                padding: 15px;
+                font-size: .85rem;
+                color: $primary-color;
+                @include base-w-h(49%,50px);
+            }
+            #contact--us--name{
+                width: 100%;
+            }
+            #contact--us--message{
+                @include base-w-h(100%,100px);
+            }
+            .submit--btn{
+                width: 25%;
+                color: $txt-color;
+                background-color: $secondary-color;
+            }
+        }
+    }
+}
+
+// === container-contact-us ===
+.container-contact-us{
+    @include base-w-h(100%,40vh);
+    @include base-flex();
+    gap: 2.5vw;
+    padding: 3.5vw;
+    &__item{
+        @include base-w-h(33%,100px);
+        background-color: $primary-color;
+        box-shadow: 2px 2px 10px #4d4d4d;
+        border-radius: $base-border-radius;
+        @include base-flex(row,right,center);
+        gap: 1.5vw;
+        color: $txt-color;
+        padding: 20px;
+        transition: .4s;
+        &__icon{
+            @include base-w-h(50px,50px);
+            img{
+                @include base-w-h();
+            }
+        }
+        &:nth-child(2){
+            background-color: $light-color;
+        }
+        &:nth-child(3){
+            background-color: $secondary-color;
+        }
+        &:hover{
+            transform:translateY(-10%);
+        }
+    }
+}
+
+// === container-map ===
+.container-map{
+    padding: 3.5vw;
+    iframe{
+        @include base-w-h(100%,50vh);
+        border-radius: $base-border-radius;
+    }
+}
